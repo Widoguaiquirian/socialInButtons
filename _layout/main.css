@@ -1,0 +1,134 @@
+:root {
+   --color-primary: rgba(102, 51, 153, 0.877);
+   --color-secondary: #ffcb03;
+   --color-tertiary: #ff585f;
+   --color-primary-darker: #4bbb7d;
+   --color-secondary-darker: #ffbb00;
+   --color-tertiary-darker: #fd424b;
+
+   --zI-1: 1;
+   --zI-2: 2;
+
+   --z-cookie-message: var(--zI-2);
+}
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   background: linear-gradient(rgb(117, 226, 234), rgb(151, 88, 149));
+}
+
+body {
+   font-size: 1.6rem;
+   margin: 0 auto;
+   font-family: "Source Sans Pro", sans-serif;
+   line-height: 1.6;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+img {
+   max-width: 100%;
+}
+
+h1,
+p,
+h2,
+h3,
+h4 {
+   margin: 0;
+   padding: 0;
+}
+
+ul,
+li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+/*--- Header ---*/
+/* ? FOR REGULAR COMMENTS */
+
+.container {
+   width: 180px;
+   height: 50px;
+   background-color: var(--color-primary);
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   transition: all 0.2s ease;
+   color: white;
+   overflow: hidden;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 100%;
+   font-size: 2rem;
+   cursor: pointer;
+   height: 100%;
+}
+
+.icons {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   bottom: -70px;
+}
+
+.icon {
+   font-size: 3rem;
+}
+
+.icon i {
+   color: white;
+   transition: all 0.2s ease;
+}
+
+.icon:hover i {
+   transform: scale(1.2);
+}
+
+.text {
+   transition: all 0.2s ease;
+}
+
+.share {
+   transition: all 0.4s ease;
+}
+
+.icon:nth-child(1) {
+   transition: all 0.2s ease;
+}
+.icon:nth-child(2) {
+   transition: all 0.3s ease;
+}
+.icon:nth-child(3) {
+   transition: all 0.4s ease;
+}
+.icon:nth-child(4) {
+   transition: all 0.5s ease;
+}
+
+.container:hover .text,
+.container:hover .share,
+.container:hover .icon {
+   transform: translateY(-70px);
+}
+
+.container:hover {
+   width: 270px;
+}
